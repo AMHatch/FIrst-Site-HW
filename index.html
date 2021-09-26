@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicks Handmade Boots</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    
+    <style>
+
+/* bc6c25 liver dogs
+dda15e fawn
+fefae0 cornsilk
+283618 kombu green
+606c38 Dark olive green */
+
+
+.header{
+width: 100%;
+height: 550px;
+background-color:darkgreen;
+overflow: hidden;
+}
+
+.z10{
+    z-index: 10;
+}
+.z15{
+    z-index: 15;
+}
+.z20{
+    z-index: 20;
+}
+.z25{
+    z-index: 25;
+}
+
+/* opacity */
+.opacity{
+    opacity: .7;
+
+}
+body{
+    margin: 0px ;
+    padding: 0px;
+}
+/* background colors */
+.bg-black{
+    background-color: #000000;
+}
+
+
+.bg-olive{
+    background-color: #606c38;
+}
+.bg-kombu{
+    background-color: #283618;
+}
+.bg-silk{
+    background-color: #fefae0;
+}
+.bg-fawn{
+    background-color: #dda15e;
+}
+.bg-liver{
+    background-color: #bc6c25;
+}
+
+/* font colors */
+.text-black{
+    color: #000000;
+}
+.text-olive{
+    color:#606c38 ;
+}
+.text-kombu{
+    color: #283618;
+}
+.text-silk{
+    color: #fefae0;
+}
+a{
+    color: #fefae0;
+    text-decoration: none;
+}
+a:hover{
+    color: #fefae0;
+    text-decoration: none;
+}
+a:visited{
+    color: #fefae0;
+    text-decoration: none;
+}
+
+/* page sections */
+.ps-white{
+    background-color: white;
+    
+    width: 100%;
+
+}
+.ps-grey{
+    background-color: #E5E5E5  ;
+
+    width: 100%;
+}
+.ps-fawn{
+    background-color: #dda15e  ;
+
+    width: 100%;
+}
+.ps-silk{
+    background-color: #fefae0  ;
+
+    width: 100%;
+    
+}
+.ps-kombu{
+    background-color: #283618  ;
+
+    width: 100%;
+    
+}
+.parallax{
+    background-image: url("https://media.nicksboots.com/wysiwyg/home/boots-outdoors-side.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background-image:url('https://www.thecoolector.com/wp-content/uploads/2019/12/hu15-1-1024x1024.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container_fluid ">
+        <header class="header position-relative">
+
+            <div class="position-absolute top-0 w-100 h-100 z20 bg-black opacity" id="opacityLayer"></div>
+
+            <div class="position-absolute top-0 w-100 h-100 z15 d-md-none d-lg-none d-xl-none" id="imageLayer">
+                <img src="images/nicks-boots-falcon.jpeg" alt="">
+            </div>
+            
+            <div class="position-absolute top-0 z15 ratio ratio-16x9 d-none d-md-block" id="videoLayer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dTaAcrx43LU?autoplay=1&mute=1&enablejsapi=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="position-absolute top-0 w-100 h-100 z25 text-silk d-flex flex-column justify-content-center align-items-center" id="textLayer">
+                <div class="display-1">Nicks</div>
+                <div class="display-5 text-silk">Handmade Boots</div>
+
+                <a href="https://nicksboots.com/" target="blank_">
+                <button type="button" class="btn bg-kombu text-silk" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Order Here
+                </button>
+            </a>
+                
+                <div></div>
+            </div>
+
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg text-silk bg-black sticky-top">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand ms-3" href="index.html"><i class="fas fa-home bg-black text-silk"></i></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-silk"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto text-gold">
+                    <a class="nav-link text-silk" aria-current="page" href="https://www.facebook.com/nickshandmadeboots/"><i class="fab fa-facebook-square"></i></a>
+                    <a class="nav-link text-silk" href="https://www.instagram.com/nickshandmadeboots/"><i class="fab fa-instagram"></i></a>
+                    <a class="nav-link text-silk" href="https://www.youtube.com/channel/UCvCF7zgsHhUlbqQ6MDHEgOA"><i class="fab fa-youtube"></i></a>
+                    <a class="nav-link text-silk" href="#"><i class="fab fa-twitter-square"></i>
+
+                    </a>
+                
+                </div>
+                </div>
+            </div>
+            </nav>
+
+
+        <main>
+            <div class="ps-silk row mt-3 mt-md-0 align-items-center justify-content-center">
+                <img width="100%" src="https://media.nicksboots.com/wysiwyg/BuyWithConfidence.jpg" alt="">
+            </div>
+
+            <div class="ps-silk row mt-3 mt-md-0">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                    <img src="images/shop-nicks-handmade-boots-online.jpeg"  width="75%" alt="salad">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        About Us
+                    </div>
+                    <div>
+                        In 1964, Nicks Boots began the tradition of expertly making the best handmade boots on the market. After 50 years, Nicks is still located in Spokane, WA, continuing on that same tradition.
+                    </div>
+                
+                </div>
+            </div>
+            <div class="parallax2"></div>
+            <div class="ps-fawn row mt-3 mt-md-0 ">
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Heritage Boots
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                        <img src="images/nicks-boots-falcon.jpeg"  width="75%" alt="boots">
+                </div>
+            </div>
+            <div class="ps-silk row mt-3 mt-md-0">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                    <img src="images/img_6106.jpeg"  width="75%" alt="salad">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Work Boots
+                    </div>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                    </div>
+                
+                </div>
+            </div>
+            <div class="ps-kombu row mt-3 mt-md-0 ">
+                <div class="col-md-6 d-flex flex-column text-silk align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Fire Boots
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                        <img src="images/fire_boot_shopping_guide.jpeg"  width="75%" alt="boots">
+                </div>
+            </div>
+            <div class="ps-silk row mt-3 mt-md-0">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                    <img src="images/Boots_2__50643.1629410656.jpg"  width="75%" alt="salad">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Motorcycle Boots
+                    </div>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                    </div>
+                
+                </div>
+            </div>
+            <div class="parallax"></div>
+            <div class="ps-fawn row mt-3 mt-md-0 ">
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Made-to-Order Boots
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                        <img src="images/guide_to_work_boots.jpeg"  width="75%" alt="boots">
+                </div>
+            </div>
+            <div class="ps-silk row mt-3 mt-md-0">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                    <img src="images/rose_anvil_nicks3-1024x559.jpeg"  width="75%" alt="salad">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        Limited Release Boots
+                    </div>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                    </div>
+                
+                </div>
+            </div>
+            <div class="ps-kombu row mt-3 mt-md-0 ">
+                <div class="col-md-6 d-flex flex-column text-silk align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        PlaceHolder
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                        <img src="images/BuilderPro_1964_new_old.jpeg"  width="75%" alt="boots">
+                </div>
+            </div>
+            <div class="ps-silk row mt-3 mt-md-0">
+                <div class="col-md-6 d-flex align-items-center justify-content-center ">
+                    <img src="images/how_to_care_for_boots.jpeg"  width="75%" alt="salad">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
+                    <div class="lead display-5 p-5">
+                        PlaceHolder
+                    </div>
+                    <div>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                    </div>
+                
+                </div>
+            </div>
+            <div class="ps-silk row mt-3 mt-md-0 align-items-center justify-content-center">
+                <img width="100%" src="https://media.nicksboots.com/wysiwyg/BuyWithConfidence.jpg" alt="">
+            </div>
+            
+
+            <div class="ps-fawn row mt-3 mt-md-0 "></div>
+
+            
+
+            </div>
+
+        </main>
+
+
+        <footer></footer>
+
+        
+
+
+
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/e3643ee640.js" crossorigin="anonymous"></script>
+</body>
+</html>

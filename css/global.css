@@ -1,0 +1,77 @@
+/* black - #000000  
+navy - #14213D
+gold - #FCA311  (accent)
+light gray - #E5E5E5 
+white = #FFFFFF */
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* background colors */
+.bg-black{
+    background-color: #000000;
+}
+.bg-navy{
+    background-color:#14213D ;
+}
+.bg-gold{
+    background-color: #FCA311;
+}
+.bg-lgrey{
+    background-color:#E5E5E5 
+}
+
+
+/* font colors */
+.text-black{
+    color: #000000;
+}
+.text-navy{
+    color:#14213D ;
+}
+.text-gold{
+    color: #FCA311;
+}
+a{
+    color: #FCA311;
+    text-decoration: none;
+}
+a, a:hover, a:visited{
+    color: #FCA311;
+    text-decoration: none;
+}
+
+.text-lgrey{
+    color:#E5E5E5 
+}
+
+/* page sections */
+.ps-white{
+    background-color: white;
+    
+    width: 100%;
+
+}
+.ps-grey{
+    background-color: #E5E5E5  ;
+
+    width: 100%;
+
+}
+.parallax{
+    background-image: url("https://www.sunnysidecircus.com/wp-content/uploads/2019/03/Banh_Mi_Sandwich_fullwidth.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background-image:url('https://infatuation.imgix.net/media/images/guides/best-banh-mi-london-sandwich/banners/GiuliaVerdinelli_BanhMiTown_PorkSpecial1_83EMP9w.jpg?auto=format&fit=max&h=1200&w=3200');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
