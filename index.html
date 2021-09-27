@@ -7,24 +7,25 @@
     <title>Nicks Handmade Boots</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    
-    
-    <style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<style>
 /* bc6c25 liver dogs
 dda15e fawn
 fefae0 cornsilk
 283618 kombu green
 606c38 Dark olive green */
-
-
+.font{
+    font-family: 'EB Garamond', serif;
+}
 .header{
 width: 100%;
 height: 550px;
-background-color:darkgreen;
+background-color:#283618;
 overflow: hidden;
 }
-
 .z10{
     z-index: 10;
 }
@@ -37,22 +38,17 @@ overflow: hidden;
 .z25{
     z-index: 25;
 }
-
-/* opacity */
 .opacity{
     opacity: .7;
-
 }
+
 body{
     margin: 0px ;
     padding: 0px;
 }
-/* background colors */
 .bg-black{
     background-color: #000000;
 }
-
-
 .bg-olive{
     background-color: #606c38;
 }
@@ -63,13 +59,11 @@ body{
     background-color: #fefae0;
 }
 .bg-fawn{
-    background-color: #dda15e;
+    background-color: #c89254;
 }
 .bg-liver{
     background-color: #bc6c25;
 }
-
-/* font colors */
 .text-black{
     color: #000000;
 }
@@ -87,40 +81,28 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #fefae0;
+    color: #bc6c25;
     text-decoration: none;
 }
 a:visited{
     color: #fefae0;
     text-decoration: none;
 }
-
-/* page sections */
-.ps-white{
-    background-color: white;
-    
-
-}
-.ps-grey{
-    background-color: #E5E5E5  ;
-
-}
 .ps-fawn{
-    background-color: #dda15e  ;
-
+    background-color: #ac7d48  ;
 }
 .ps-silk{
     background-color: #fefae0  ;
-
-    
+    margin: 0px;
 }
 .ps-kombu{
     background-color: #283618  ;
-    
+    margin: 0px;
 }
 .parallax{
     background-image: url("https://media.nicksboots.com/wysiwyg/home/boots-outdoors-side.jpg");
     height: 600px;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,8 +116,10 @@ a:visited{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-    </style>
+.indent{
+    text-indent: 30%;
+}
+</style>
 </head>
 <body>
     <div class="container_fluid ">
@@ -143,17 +127,17 @@ a:visited{
 
             <div class="position-absolute top-0 w-100 h-100 z20 bg-black opacity" id="opacityLayer"></div>
 
-            <div class="position-absolute top-0 w-100 h-100 z15 d-md-none d-lg-none d-xl-none" id="imageLayer">
-                <img src="images/nicks-boots-falcon.jpeg" alt="">
+            <div class="position-absolute justify-image-center top-0 w-100 h-100 z15 d-md-none d-lg-none d-xl-none" id="imageLayer">
+                <img class="img-fluid" src="images/dscf2164.jpeg" alt="">
             </div>
             
             <div class="position-absolute top-0 z15 ratio ratio-16x9 d-none d-md-block" id="videoLayer">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dTaAcrx43LU?autoplay=1&mute=1&enablejsapi=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dTaAcrx43LU?autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div class="position-absolute top-0 w-100 h-100 z25 text-silk d-flex flex-column justify-content-center align-items-center" id="textLayer">
-                <div class="display-1">Nicks</div>
-                <div class="display-5 text-silk">Handmade Boots</div>
+                <div class="display-1 font">NICKS</div>
+                <div class="display-5 font text-silk">Handmade Boots</div>
 
                 <a href="https://nicksboots.com/" target="blank_">
                 <button type="button" class="btn bg-kombu text-silk" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -167,10 +151,10 @@ a:visited{
         </header>
 
 
-        <nav class="navbar navbar-expand-lg text-silk bg-black sticky-top">
+        <nav class="navbar navbar-expand-lg text-silk bg-kombu sticky-top">
             <div class="container-fluid">
                 
-                <a class="navbar-brand ms-3" href="index.html"><i class="fas fa-home bg-black text-silk"></i></a>
+                <a class="navbar-brand ms-3" href="index.html"><i class="fas fa-home bg-kombu text-silk"></i></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-silk"></span>
@@ -178,10 +162,10 @@ a:visited{
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto text-gold">
-                    <a class="nav-link text-silk" aria-current="page" href="https://www.facebook.com/nickshandmadeboots/"><i class="fab fa-facebook-square"></i></a>
-                    <a class="nav-link text-silk" href="https://www.instagram.com/nickshandmadeboots/"><i class="fab fa-instagram"></i></a>
-                    <a class="nav-link text-silk" href="https://www.youtube.com/channel/UCvCF7zgsHhUlbqQ6MDHEgOA"><i class="fab fa-youtube"></i></a>
-                    <a class="nav-link text-silk" href="#"><i class="fab fa-twitter-square"></i>
+                    <a class="p-2 " target="blank_" aria-current="page" href="https://www.facebook.com/nickshandmadeboots/"><i class="fab fa-facebook-square"></i></a>
+                    <a class="p-2 " target="blank_" href="https://www.instagram.com/nickshandmadeboots/"><i class="fab fa-instagram"></i></a>
+                    <a class="p-2 " target="blank_" href="https://www.youtube.com/channel/UCvCF7zgsHhUlbqQ6MDHEgOA"><i class="fab fa-youtube"></i></a>
+    
 
                     </a>
                 
@@ -192,9 +176,6 @@ a:visited{
 
 
         <main>
-            <div class="ps-silk row mt-3 mt-md-0 align-items-center justify-content-center">
-                <img width="100%" src="https://media.nicksboots.com/wysiwyg/BuyWithConfidence.jpg" alt="">
-            </div>
 
             <div class="ps-silk row mt-3 mt-md-0">
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
@@ -202,10 +183,8 @@ a:visited{
 
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
-                        About Us
-                    </div>
-                    <div>
+            
+                    <div class="lead font text-kombu">
                         In 1964, Nicks Boots began the tradition of expertly making the best handmade boots on the market. After 50 years, Nicks is still located in Spokane, WA, continuing on that same tradition.
                     </div>
                 
@@ -214,15 +193,18 @@ a:visited{
             <div class="parallax2"></div>
             <div class="ps-fawn row mt-3 mt-md-0 ">
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
-                        Heritage Boots
+                    <div class="font display-5 p-5">
+                    <b> Heritage Boots</b>
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                    <b> Don't necessarily need working footwear, but still, want casual boots of the highest order?</b><br>
+That is exactly what Nicks Boots has in store for you with our line of casual boots. These boots are perfect for casual wear, whether you want them as fashion boots or for when the inclement weather calls for a hardier, sturdier breed of footwear. Nicks' casual boots for men and women are available in several designs, perfect for whatever you might want them for.
+Our casual boots are rebuildable, so you can keep them in working order for years or decades to come. We offer both traditional boots in 6-inch and 8-inch heights, with a variety of style soles. 
+Nicks' casual boots are handmade and can be customized to size. Every boot is lasted by hand. You have your choice of sole, should you prefer a lug sole for the utmost in traction or a smooth western sole.
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
-                        <img src="images/nicks-boots-falcon.jpeg"  width="75%" alt="boots">
+                        <img src="images/nicks-boots-falcon.jpeg"  width="75%" height="100%" alt="boots">
                 </div>
             </div>
             <div class="ps-silk row mt-3 mt-md-0">
@@ -231,39 +213,45 @@ a:visited{
 
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
+                    <div class="font display-5 p-5">
                         Work Boots
                     </div>
                     <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                        <b> If you work on your feet, then you need the best work boots.</b> <br> Work boots are an investment in your feet, and the less you invest the fewer dividends will be had. Your feet will suffer and so will you.
+
+Our leather work boots are available for almost any profession, hand-stitched, double-welted and made from the same lots of leather to ensure consistency and quality. We know that specialty work demands specialty boots, and you can expect the quality, comfort, and durability that has kept customers coming back to Nicks for decades.
+Nicks' American-made work boots can be made-to-order and customized, so you can have the features that you desire in a work boot. They are also rebuildable, so you can keep them working as hard and as long as you are.
                     </div>
                 
                 </div>
             </div>
             <div class="ps-kombu row mt-3 mt-md-0 ">
                 <div class="col-md-6 d-flex flex-column text-silk align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
+                    <div class="font display-5 p-5">
                         Fire Boots
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
-                    </div>
-                </div>
+                         <b>Serious work demands serious footwear, and that's exactly what Nicks' firefighter boots are. </b> <br> These are serious boots, designed to hold up in the harshest of conditions and keep you going all day, every day.
+            Every one of our wildland firefighter boots is certified by the National Fire Protection Association (NFPA). The experts in fighting fires have certified these boots for exactly the use they are built for, so you can trust that they will do the job. In fact, Nicks' firefighter work boots have been some of the most popular models in the industry for years. Customer after customer has worn them through wildfire season and either had theirs rebuilt or come back for another pair because they are built to pass a trial by fire.
+
+                                </div>
+                            </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
                         <img src="images/fire_boot_shopping_guide.jpeg"  width="75%" alt="boots">
                 </div>
             </div>
             <div class="ps-silk row mt-3 mt-md-0">
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
-                    <img src="images/Boots_2__50643.1629410656.jpg"  width="75%" alt="salad">
+                    <img src="images/handmade-custom-motorcycle-boots.jpeg"  width="75%" alt="">
 
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
+                    <div class="font display-5 p-5">
                         Motorcycle Boots
                     </div>
                     <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                    <b> The best motorcycle boots protect your feet, are comfortable to wear for extended periods, and suit your style of riding and motorcycle.</b>
+It's a lot like choosing a pair of work boots. You start with what kind of boots are going to suit what you're doing, and then you get a pair of boots that does the job and that you can stand to wear. Our Motorcycle boots were developed with Damien Garcia and Dan Sammons. This boot is designed for moto-riders who need a durable boot for both on and off the bike.
                     </div>
                 
                 </div>
@@ -271,39 +259,41 @@ a:visited{
             <div class="parallax"></div>
             <div class="ps-fawn row mt-3 mt-md-0 ">
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
-                        Made-to-Order Boots
+                    <div class="font display-5 p-5">
+                        Made to Order Boots
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                        <b> Nicks Handmade Boots has been building the best handmade boots since 1964.</b> With our Made to Order Boots, you can choose to customize your own boots with the many options available. While all of our boots are made to fit your feet, these custom boots allow you to choose the style and configuration best fit for your work.
+                        Whether you’re looking for firefighter boots, logger boots, safety boots, steel toe boots, or other handmade safety boots, you can be sure your Nicks Boots are up to the job. After determining the right size, your boots will break in to give you that custom tailored feel. 
+                        Nicks MTO Boot Options allow you to customize the boot’s style and configuration beyond what is normally offered but does not change the fit of your handcrafted boots.  
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
-                        <img src="images/guide_to_work_boots.jpeg"  width="75%" alt="boots">
+                        <img src="images/guide_to_work_boots.jpeg"  width="75%" height="100%" alt="boots">
                 </div>
             </div>
             <div class="ps-silk row mt-3 mt-md-0">
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
-                    <img src="images/rose_anvil_nicks3-1024x559.jpeg"  width="75%" alt="salad">
+                    <img src="images/nd1.jpeg"  width="75%" alt="salad">
 
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
+                    <div class="font display-5 p-5">
                         Limited Release Boots
                     </div>
                     <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                        These boots are Limited Run Collaboration boots and boots available in rare and limited run leathers with every customizable option available. Get yours before they sell out because once they are gone, they wont be made again. 
                     </div>
                 
                 </div>
             </div>
             <div class="ps-kombu row mt-3 mt-md-0 ">
                 <div class="col-md-6 d-flex flex-column text-silk align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
-                        PlaceHolder
+                    <div class="font display-5 p-5">
+                        1964 Leather
                     </div>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum dolorem repudiandae reprehenderit veritatis, dicta modi repellendus, iusto enim ratione saepe nostrum, perferendis voluptates vero. Aliquid assumenda corporis quidem voluptatem.
+                        For the last two years, we've been working tirelessly with our USA tanneries to produce leather that is more similar to the "classic boot leather recipe" we used decades ago. The 1964 Brown is similar to these older leathers in temper and color. While our current work boot leathers are great and have worked well for years, we are always looking to improve. We have packed oils, waxes, and natural conditioners into the leather so that they'll feel even better out of the box. They are just as durable as our current offerings and work great in all applications, including fire. After field-testing the leather, it wears and burnishes like every boot should, gaining character as it takes a beating.
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
@@ -312,15 +302,19 @@ a:visited{
             </div>
             <div class="ps-silk row mt-3 mt-md-0">
                 <div class="col-md-6 d-flex align-items-center justify-content-center ">
-                    <img src="images/how_to_care_for_boots.jpeg"  width="75%" alt="salad">
+                    <img src="images/when_to_resole_boots_and_when_to_rebuild_1.jpeg"  width="75%" height="100%" alt="salad">
 
                 </div>
                 <div class="col-md-6 d-flex flex-column align-items-center justify-content-center p-5"> 
-                    <div class="lead display-5 p-5">
-                        PlaceHolder
+                    <div class="font display-5 p-5">
+                        Resole, Rebuild
                     </div>
                     <div>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero corrupti minus ratione! Facilis, eum autem, numquam ea expedita veritatis dolorem, sunt quibusdam voluptatibus beatae velit. Totam necessitatibus possimus quo.
+                        In need of quality boot repair services? Who better than Nicks Boots to repair them, as we are also one of the finest bootmakers that footwear can be purchased from. In addition to crafting custom boots, we also offer repair services to our customers.
+
+                        Nicks' boots have been known to stay in good working condition for years, and if properly cared for can last a very long time indeed with only occasional trips to our boot repair shop. Our boots are handmade with old-world construction techniques, ensuring that they can be kept working in perpetuity.
+                        
+                        Most leather boot repair services are of two varieties, beyond minor things such as replacing laces, the odd eyelet, or leather conditioning to restore the hide to a supple condition.
                     </div>
                 
                 </div>
